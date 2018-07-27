@@ -262,7 +262,7 @@ int main(int argc, const char** argv) {
 
       std::stringstream sout;
       // sout<<"Frame-"<<std::setfill('0')<<std::setw(6)<<frame_count<<"-RAW_IMAGE"<<image_index<<".bmp";
-      sout<<argv[1]<<image_index<<"/"<<timeStamp<<".jpg";
+      sout<<argv[1]<<image_index<<"/"<<timeStamp<<".png";
       // std::cerr<<"Writing "<<sout.str()<<std::endl;
       cv::imwrite(sout.str(), img);
 
